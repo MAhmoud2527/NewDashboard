@@ -948,6 +948,7 @@ footer {
     bottom: 0px;
     width: 100%;
     font-family: 'Cairo', sans-serif;
+    border-top: solid 3px #fbaa25;
 }
 @media (min-width: 768px) {
     .footer_fixed footer {
