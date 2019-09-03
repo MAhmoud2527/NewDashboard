@@ -5397,14 +5397,14 @@ header {
     width: 100%
 }
 #nprogress .bar {
-    background: #1ABB9C
+    background: #FBAA25
 }
 #nprogress .peg {
-    box-shadow: 0 0 10px #1ABB9C, 0 0 5px #1ABB9C
+    box-shadow: 0 0 10px #FBAA25, 0 0 5px #FBAA25
 }
 #nprogress .spinner-icon {
-    border-top-color: #1ABB9C;
-    border-left-color: #1ABB9C
+    border-top-color: #FBAA25;
+    border-left-color: #FBAA25
 }
 .editor-wrapper {
     min-height: 250px;
