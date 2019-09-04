@@ -1699,7 +1699,7 @@ span.right {
     padding: 5px 0 0 0;
     position: fixed;
     width: 230px;
-    background: #066a80;
+    /* background: #066a80; */
 	z-index:999;
 }
 .sidebar-footer a {
