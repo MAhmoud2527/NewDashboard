@@ -1379,6 +1379,9 @@ th {
         float: right
     }
 }
+.navbar-right {
+    float: left!important;
+}
 
 @media (min-width:768px) {
     .navbar-left.flip {
@@ -1389,8 +1392,8 @@ th {
         margin-right: auto
     }
     .navbar-right.flip {
-        float: left!important;
-        margin-left: -15px;
+        float: right!important;
+        /* margin-left: -15px; */
         margin-right: auto
     }
     .navbar-right .dropdown-menu {
@@ -2708,6 +2711,7 @@ footer {
     width: 100%;
     font-family: 'Cairo', sans-serif;
     border-top: solid 3px #fbaa25;
+    /* z-index: 99; */
 }
 @media (min-width: 768px) {
     .footer_fixed footer {
@@ -2844,7 +2848,7 @@ h2 {
 .x_panel {
     position: relative;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 46px;
     padding: 10px 17px;
     display: inline-block;
     background: #fff;
@@ -2866,9 +2870,11 @@ h2 {
 }
 .x_title h2 {
     margin: 5px 0 6px;
-    float: left;
+    float: right;
     display: block;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: 'cairo';
+    font-weight: bold;
 }
 .x_title h2 small {
     margin-left: 10px
@@ -3958,10 +3964,13 @@ span.section {
 }
 .form-control {
     border-radius: 0;
-    width: 100%
+    width: 100%;
+    font-family: 'cairo';
+    height: 41px;
 }
 .form-horizontal .control-label {
-    padding-top: 8px
+    padding-top: 8px;
+    text-align: right
 }
 .form-control:focus {
     border-color: #CCD0D7;
@@ -4123,7 +4132,8 @@ select.parsley-error {
     font-weight: bolder
 }
 .btn {
-    border-radius: 3px
+    border-radius: 3px;
+    font-family: 'cairo'
 }
 a.btn-success,
 a.btn-primary,
@@ -5699,7 +5709,7 @@ fieldset {
     width: 100%;
     border-top: 1px solid #ddd;
     padding: 10px 5px;
-    text-align: right;
+    text-align: left;
     margin-top: 10px
 }
 .actionBar .buttonDisabled {
@@ -6171,4 +6181,40 @@ body:fullscreen {
   }
   .fa.pull-right{
     color: #066a80
+}
+.btn-mod{
+    background: #066a80;
+    border: #066a80;
+    color: #fff;
+
+}
+.btn-mod:hover{
+    background: #066a80;
+    border: #066a80;
+    color: #fff;
+
+}
+label{
+    font-family: 'cairo';
+
+}
+.table{
+    font-family: 'cairo';
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    line-height: 2.428571;
+    text-align: center;
+}
+.actiospan{
+    font-size: 15px;
+    font-family: 'cairo';
+    font-weight: bold;
+    padding: 0 10px;
+}
+.actioborder{
+    font-size: 16px;
+    font-family: 'caior';
+    padding: 6px 35px;
+    font-weight: bold;
+    border: solid 1px #ddd;
 }
