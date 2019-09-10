@@ -4472,3 +4472,13 @@ label{
     font-weight: bold;
     border: solid 1px #ddd;
 }
+div.dataTables_wrapper div.dataTables_filter input {
+    width: 500px!important;
+    margin-left: 20px!important;
+    padding: 10px 0!important;
+    border: solid 1px #ddd!important;
+ }
+ .HEADTITLE-STYLE {
+    text-align: center!important;
+    margin-bottom: 40px!important;
+ }
