@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="asstes/images/logo.png" type="image/ico" />
+
+  <title>SentryERP </title>
+
+  <!-- Bootstrap -->
+  <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- Datatables -->
+  <link href="vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link href="vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+  <link href="vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+  <link href="vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+  <link href="vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Custom Theme Style -->
+  <link href="build/css/Arabic.css" rel="stylesheet" id="lnagLink">
+
+  <style>
+    .leftInfo {
+      padding: 2px 50px 2px 0;
+    font-size: 14px;
+    text-align: right;
+    }
+
+    .rightInfo {
+      padding: 2px 50px 2px 0;
+    font-size: 14px;
+    text-align: right;
+    }
+    
+    .taxcol td, .taxcol td{
+      text-align: right!important;
+      font-size: 17px;
+      font-weight: 700;
+      font-family: monospace;
+      padding-bottom: 10px;
+    }
+    .nomg{
+      margin-bottom: 0!important;
+    }
+
+    .repotTitle {
+      font-size: 20px !important;
+      font-weight: 700 !important;
+      font-family: monospace !important;
+    }
+
+    .head_info h4 {
+      text-align: center;
+      font-size: 20px !important;
+      font-weight: 700 !important;
+      font-family: monospace !important;
+    }
+
+    .priceP {
+      margin-top: 10px;
+      font-size: 19px;
+    }
+
+    .priceP2 {
+      margin-top: 10px;
+      font-size: 19px;
+      text-align: center;
+    }
+
+    .singfooter>div {
+      display: inline-block;
+      margin: 0 60px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <nav>
+            <div class="nav toggle">
+              <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right pull-right ">
+
+
+              <li role="presentation" class="dropdown">
+                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-globe"></i>
+                </a>
+                <ul id="menu1" class="dropdown-menu dropdown-usermenu" role="menu" style="text-align: center;">
+                  <li>
+                    <a class="user-profile dropdown-toggle " onclick="changeLang('ar')">
+                      Arabic
+                    </a>
+                  </li>
+                  <li>
+                    <a class="user-profile dropdown-toggle" onclick="changeLang('en')">
+                      English
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="x_panel">
+
+            <div class="x_content">
+              <!-- Code Here -->
+              <div class="container-fluid">
+                  <img src="asstes/images/header.jpg" alt="" class="img-responsive">
+          
+                  <div class="row">
+                      <table class="table nomg">
+                          <thead>
+                              <tr>
+                                  <td class="text-center" style="font-size: 19px;">عرض السعر </td>
+                              </tr>
+                          </thead>
+                      </table>
+                      <table class="table taxcol nomg">
+                          <thead>
+                              <tr>
+                                  <td>
+                                      <span>الرقم الضريبي للمؤسسة : </span>
+                                      <span> 52124121 </span>
+                                  </td>
+                              </tr>
+                          </thead>
+                      </table>
+                      <table class="table table-bordered nomg">
+                          <thead>
+                              <tr>
+                                  <td>
+                                      <div class="head_info">
+          
+                                          <h4>
+                                              بيانات البائع
+                                          </h4>
+                                      </div>
+                                      <div class="rightInfo">
+                                          <div>
+                                              <span>التاريخ :</span>
+                                              <span>20/10/2019</span>
+                                              <span>&nbsp;</span>
+                                              <span>pm 06:40 </span>
+                                          </div>
+                                          <div>
+                                              <span> أسم المندوب/ </span>
+                                              <span>محمود أحمد</span>
+                                          </div>
+                                          <div>
+                                              <span>رقم المندوب / </span>
+                                              <span>01279993871</span>
+                                          </div>
+                                          <div>
+                                              <span> البريد الالكتروني / </span>
+                                              <span>Sentry@yahoo.com</span>
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>
+                                      <div class="head_info">
+          
+                                          <h4>
+                                              بيانات العميل
+                                          </h4>
+                                      </div>
+                                      <div class="leftInfo">
+                                          <div>
+                                              <span> رقم العميل : </span>
+                                              <span>1215451</span>
+                                          </div>
+                                          <div>
+                                              <span>أسم العميل : </span>
+                                              <span>محمود أحمد</span>
+                                          </div>
+                                          <div>
+                                              <span>الرقم الضريبي : </span>
+                                              <span> 521212</span>
+                                          </div>
+          
+                                          <div>
+                                              <span>تلفون العميل : </span>
+                                              <span>01090604391</span>
+                                          </div>
+                                          <div>
+                                              <span> البريد الالكتروني : </span>
+                                              <span>Sentry@yahoo.com</span>
+                                          </div>
+                                          <div>
+                                              <span>الرصيد السابق : </span>
+                                              <span>4545</span>
+                                          </div>
+                                      </div>
+                                  </td>
+                              </tr>
+                          </thead>
+                      </table>
+          
+                      <div class="col-lg-12">
+                          <p class="priceP">
+                              نأمل أن يحوز عرض السعر على مباركتكم
+                          </p>
+                      </div>
+                      <table class="table table-bordered">
+                          <thead>
+                              <tr>
+                                  <th>#</th>
+                                  <th>موديل الصنف</th>
+                                  <th>وصف الصنف</th>
+                                  <th>الوحدة</th>
+                                  <th>الكمية</th>
+                                  <th>سعر الوحدة</th>
+                                  <th>الأجمالى</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>1</td>
+                                  <td>Otto</td>
+                                  <td>do lor</td>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>mdo lor</td>
+                                  <td>FDfd</td>
+                              </tr>
+          
+          
+                              <tr>
+                                  <td colspan="5">الاجمالى قبل الخصم</td>
+                                  <td colspan="2"> 5454 </td>
+                              </tr>
+                              <tr>
+                                  <td colspan="5"> الخصم % </td>
+                                  <td colspan="2"> 5454 </td>
+                              </tr>
+                              <tr>
+                                  <td colspan="5">الاجمالى بعد الخصم</td>
+                                  <td colspan="2"> 5454 </td>
+                              </tr>
+                              <tr>
+                                  <td colspan="5"> ضريبة القيمة المضافة</td>
+                                  <td colspan="2"> 5454 </td>
+                              </tr>
+                              <tr>
+                                  <td colspan="5">الاجمالى مع اضافة ضريبة القيمة المضافة</td>
+                                  <td colspan="2"> 5454 </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <table class="table nomg">
+                          <thead>
+                              <tr>
+                                  <td>
+                                      <p class="priceP2">
+                                          يرجى مراجعه شروط الضمان خلف الفاتورة
+                                      </p>
+                                  </td>
+                              </tr>
+                          </thead>
+                      </table>
+                      <div class="col-lg-12">
+                          <p class="priceP">
+                              اقر انا الموقع ادناه باستلام البضاعة الموضحة فى الفاتورة كاملة<br />
+                              حسب الطلب وفى حالة جيدة
+                          </p>
+                      </div>
+                      <table class="table nomg ">
+                          <thead>
+                              <tr>
+                                  <td>
+                                      <div class="rightInfo singfooter">
+                                          <div>
+                                              <span>المستلم </span><br />
+                                              <span>..............</span>
+                                          </div>
+                                          <div>
+                                              <span>التوقيع </span><br />
+                                              <span>.............</span>
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>
+                                      <div class="leftInfo singfooter">
+                                          <div>
+                                              <span>البائع </span><br />
+                                              <span>................</span>
+                                          </div>
+                                          <div>
+                                              <span>التوقيع </span><br />
+                                              <span>............</span>
+                                          </div>
+                                      </div>
+                                  </td>
+                              </tr>
+                          </thead>
+                      </table>
+                  </div>
+                  <br>
+                  <img src="asstes/images/footer.jpg" alt="" class="img-responsive">
+          
+              </div>
+              <br>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <!-- /page content -->
+
+
+      <!-- /footer content -->
+    </div>
+  </div>
+
+
+
+  <!-- jQuery -->
+  <script src="vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Datatables -->
+  <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+  <script src="vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+  <script src="vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+  <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+  <script src="vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+  <script src="vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+  <script src="vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+  <script src="vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+  <script src="vendors/jszip/dist/jszip.min.js"></script>
+  <script src="vendors/pdfmake/build/pdfmake.min.js"></script>
+  <script src="vendors/pdfmake/build/vfs_fonts.js"></script>
+  <!-- Custom Theme Scripts -->
+  <script src="build/js/custom.js"></script>
+
+
+
+</body>
+
+</html>
